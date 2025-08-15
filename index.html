@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Edocument</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+  <!-- Favicons -->
+  <link href="assets/img/logo_kota.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+</head>
+
+<body class="index-page">
+
+  <header id="header" class="header d-flex align-items-center fixed-top">
+    <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
+
+      <a href="index.html" class="logo d-flex align-items-center">
+  <img src="assets/img/logo_kota.png" alt="Logo" style="height: 40px; margin-right: 10px;">
+  <h1 class="sitename m-0">E-Sign Balikpapan</h1>
+</a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="#hero" class="active">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#Login">Login</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+    </div>
+  </header>
+
+  <main class="main">
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero section dark-background">
+      <img src="assets/img/hero-bg-2.jpg" alt="" class="hero-bg">
+
+      <div class="container">
+        <div class="row gy-4 justify-content-between">
+
+          <div class="col-lg-6 d-flex flex-column justify-content-center" data-aos="fade-in">
+            <h1><span>ESIGN BALIKPAPAN</span></h1>
+            <p>Sistem Tanda Tangan Elektronik Kota Balikpapan</p>
+            <div class="d-flex">
+              <a href="https://youtu.be/0rrvpMnfkIw?si=ZSb2E0oCgaU4boY4"
+                class="glightbox btn-watch-video d-flex align-items-center"><i
+                  class="bi bi-play-circle"></i><span>Watch Video</span></a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <svg class="hero-waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+        viewBox="0 24 150 28 " preserveAspectRatio="none">
+        <defs>
+          <path id="wave-path"
+            d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"></path>
+        </defs>
+        <g class="wave1">
+          <use xlink:href="#wave-path" x="50" y="3"></use>
+        </g>
+        <g class="wave2">
+          <use xlink:href="#wave-path" x="50" y="0"></use>
+        </g>
+        <g class="wave3">
+          <use xlink:href="#wave-path" x="50" y="9"></use>
+        </g>
+      </svg>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about section d-flex align-items-center" style="min-height: 100vh; background-color: #f9f9f9;">
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="row align-items-center justify-content-between gy-4">
+          <div class="col-lg-6">
+            <img src="assets/img/ttd.jpg" alt="Tentang Kami" class="img-fluid rounded shadow"
+              style="width: 100%; max-width: 600px;">
+          </div>
+          <div class="col-lg-6 content">
+            <h3 class="text-primary">Tentang Kami</h3>
+            <h2 class="fw-bold mb-3">ESIGN Balikpapan</h2>
+            <p class="fs-5 mb-4">
+              ESIGN adalah sistem tanda tangan elektronik yang memudahkan proses penandatanganan dokumen secara digital di Kota Balikpapan.
+              Dengan ESIGN, Anda dapat menandatangani dokumen dengan mudah, aman, dan cepat tanpa perlu mencetak atau memindai dokumen.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Login Section -->
+    <section id="Login" class="login section" style="min-height: 100vh; background-color: #f8f9fa;">
+      <div class="container d-flex justify-content-center align-items-center" style="min-height: 100vh;">
+        <div class="col-md-6 col-lg-4 shadow p-5 bg-white rounded" data-aos="fade-up">
+          <div class="text-center mb-4">
+            <h3 class="text-primary fw-bold">Login ke ESIGN</h3>
+            <p class="text-muted">Silakan masuk untuk melanjutkan</p>
+          </div>
+          <div id="login-success" class="alert alert-success d-none" role="alert">
+            Login berhasil! Selamat datang kembali.
+          </div>
+
+          <form id="loginForm">
+            <div class="mb-3">
+              <label for="username" class="form-label">Username atau Email</label>
+              <input type="text" class="form-control" id="username" name="username" required
+                placeholder="Masukkan username/email">
+            </div>
+            <div class="mb-3">
+              <label for="password" class="form-label">Kata Sandi</label>
+              <input type="password" class="form-control" id="password" name="password" required
+                placeholder="Masukkan kata sandi">
+            </div>
+            <div class="d-grid mb-3">
+              <button type="submit" class="btn btn-primary">Masuk</button>
+            </div>
+            <div class="text-center">
+              <small><a href="#" class="text-decoration-none" data-bs-toggle="modal"
+                  data-bs-target="#forgotPasswordModal">Lupa kata sandi?</a></small>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- MODAL RESET PASSWORD -->
+    <div class="modal fade" id="forgotPasswordModal" tabindex="-1" aria-labelledby="forgotPasswordModalLabel"
+      aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content p-4">
+          <div class="modal-header">
+            <h5 class="modal-title" id="forgotPasswordModalLabel">Reset Kata Sandi</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Tutup"></button>
+          </div>
+          <div class="modal-body">
+            <form id="resetPasswordForm">
+              <div class="mb-3">
+                <label for="reset-email" class="form-label">Masukkan Email Anda</label>
+                <input type="email" class="form-control" id="reset-email" required placeholder="contoh@email.com">
+              </div>
+              <div class="mb-3">
+                <label for="new-password" class="form-label">Kata Sandi Baru</label>
+                <input type="password" class="form-control" id="new-password" required placeholder="Kata sandi baru">
+              </div>
+              <div class="d-grid">
+                <button type="submit" class="btn btn-primary">Reset Sandi</button>
+              </div>
+            </form>
+            <div id="reset-success" class="alert alert-success mt-3 d-none">
+              Kata sandi berhasil direset!
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery section">
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Gallery</h2>
+        <div><span>Check Our</span> <span class="description-title">Gallery</span></div>
+      </div>
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="row g-0">
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="assets/img/gallery/tte1.jpg" class="glightbox" data-gallery="images-gallery">
+                <img src="assets/img/gallery/tte1.jpg" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="assets/img/gallery/tte2.png" class="glightbox" data-gallery="images-gallery">
+                <img src="assets/img/gallery/tte2.png" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="assets/img/gallery/tte3.jpg" class="glightbox" data-gallery="images-gallery">
+                <img src="assets/img/gallery/tte3.jpg" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="assets/img/gallery/tte4.jpg" class="glightbox" data-gallery="images-gallery">
+                <img src="assets/img/gallery/tte4.jpg" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="assets/img/gallery/tte5.jpg" class="glightbox" data-gallery="images-gallery">
+                <img src="assets/img/gallery/tte5.jpg" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="assets/img/gallery/tte6.jpg" class="glightbox" data-gallery="images-gallery">
+                <img src="assets/img/gallery/tte6.jpg" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="assets/img/gallery/tte7.jpg" class="glightbox" data-gallery="images-gallery">
+                <img src="assets/img/gallery/tte7.jpg" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="assets/img/gallery/tte8.jpg" class="glightbox" data-gallery="images-gallery">
+                <img src="assets/img/gallery/tte8.jpg" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials section dark-background">
+      <img src="assets/img/tte testi.jpg" class="testimonials-bg" alt="">
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="swiper init-swiper">
+          <script type="application/json" class="swiper-config">
+            {
+              "loop": true,
+              "speed": 600,
+              "autoplay": { "delay": 5000 },
+              "slidesPerView": "auto",
+              "pagination": { "el": ".swiper-pagination", "type": "bullets", "clickable": true }
+            }
+          </script>
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <img src="assets/img/testimonials/ce1.jpg" class="testimonial-img" alt="">
+                <h3>Shin Eun Soo</h3>
+                <h4>Ceo </h4>
+                <div class="stars"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                    class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></div>
+                <p><i class="bi bi-quote quote-icon-left"></i>
+                  <span>TTE mudah diintegrasikan ke berbagai sistem yang kami kelola. Ini sangat membantu kelancaran proses kerja tanpa perlu bolak-balik cetak dokumen.</span>
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <img src="assets/img/testimonials/ce2.jpg" class="testimonial-img" alt="">
+                <h3>Oh Yeju</h3>
+                <h4>Designer</h4>
+                <div class="stars"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                    class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></div>
+                <p><i class="bi bi-quote quote-icon-left"></i>
+                  <span>TTE membantu meningkatkan citra profesional saya. Dokumen kontrak atau desain akhir yang ditandatangani digital terlihat lebih rapi dan resmi</span>
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <img src="assets/img/testimonials/ce3.jpg" class="testimonial-img" alt="">
+                <h3>Park Juwon Nahee</h3>
+                <h4>Programmer</h4>
+                <div class="stars"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                    class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></div>
+                <p><i class="bi bi-quote quote-icon-left"></i>
+                  <span>Integrasi TTE ke aplikasi internal sangat mudah. Dukungan API dan standar keamanannya sudah sesuai. Solusi modern untuk sistem pemerintahan.</span>
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <img src="assets/img/testimonials/co1.jpg" class="testimonial-img" alt="">
+                <h3>Choi Hyun Wook</h3>
+                <h4>Ceo</h4>
+                <div class="stars"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                    class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></div>
+                <p><i class="bi bi-quote quote-icon-left"></i>
+                  <span>Dengan TTE, saya dapat menandatangani dokumen strategis secara instan tanpa perlu hadir secara fisik, sehingga proses pengambilan keputusan menjadi jauh lebih cepat.</span>
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <img src="assets/img/testimonials/co2.jpg" class="testimonial-img" alt="">
+                <h3>Hwang Minhyun</h3>
+                <h4>Ceo</h4>
+                <div class="stars"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                    class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></div>
+                <p><i class="bi bi-quote quote-icon-left"></i>
+                  <span>Implementasi TTE adalah bagian dari visi kami untuk menjadi organisasi yang agile dan digital-ready. Ini bukan sekadar efisiensi, tapi transformasi menyeluruh.</span>
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+<section id="contact" class="contact section">
+  <div class="container section-title" data-aos="fade-up">
+    <h2>Contact</h2>
+    <div><span>Contact</span> <span class="description-title">Us</span></div>
+  </div>
+
+  <div class="container" data-aos="fade-up" data-aos-delay="100">
+    <div class="row gy-4">
+
+      <!-- Kolom Kiri: Info Kontak (menurun) -->
+      <div class="col-lg-5">
+        <div class="info-item d-flex flex-column text-center justify-content-center align-items-center mb-4" data-aos="fade-up" data-aos-delay="200">
+          <i class="bi bi-geo-alt mb-3" style="font-size: 2rem;"></i>
+          <h3>Alamat</h3>
+          <p>JL.Jendral Sudirman No.1 RT.13,Kota Balikpapan</p>
+        </div>
+
+        <div class="info-item d-flex flex-column text-center justify-content-center align-items-center mb-4" data-aos="fade-up" data-aos-delay="300">
+          <i class="bi bi-telephone mb-3" style="font-size: 2rem;"></i>
+          <h3>Telepon</h3>
+          <p>(0542)-421500,421600,743115</p>
+        </div>
+
+        <div class="info-item d-flex flex-column text-center justify-content-center align-items-center" data-aos="fade-up" data-aos-delay="400">
+          <i class="bi bi-envelope mb-3" style="font-size: 2rem;"></i>
+          <h3>Email</h3>
+          <p>admin@balikpapan.go.id</p>
+        </div>
+      </div>
+
+      <!-- Kolom Kanan: Form Kontak -->
+      <div class="col-lg-7">
+        <form class="php-email-form">
+          <div class="row gy-4">
+            <div class="col-md-6">
+              <input type="text" name="name" class="form-control" placeholder="Your Name" required>
+            </div>
+            <div class="col-md-6">
+              <input type="email" class="form-control" name="email" placeholder="Your Email" required>
+            </div>
+            <div class="col-md-12">
+              <input type="text" class="form-control" name="subject" placeholder="Subject" required>
+            </div>
+            <div class="col-md-12">
+              <textarea class="form-control" name="message" rows="6" placeholder="Message" required></textarea>
+            </div>
+            <div class="col-md-12 text-center">
+              <div class="loading">Loading</div>
+              <div class="error-message"></div>
+              <div class="sent-message">Your message has been sent. Thank you!</div>
+              <button type="submit">Send Message</button>
+            </div>
+          </div>
+        </form>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+  </main>
+
+  <footer id="footer" class="footer dark-background">
+    <div class="container">
+      <div class="copyright text-center">
+        <p>© <span>Copyright</span> <strong class="px-1 sitename">ESIGN Balikpapan</strong><span>All Rights Reserved</span></p>
+      </div>
+    </div>
+  </footer>
+
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/js/main.js"></script>
+
+  <script>
+    // Login form - notifikasi hilang setelah 3 detik
+    document.getElementById("loginForm").addEventListener("submit", function (event) {
+      event.preventDefault();
+      const success = document.getElementById("login-success");
+      success.classList.remove("d-none");
+      this.reset();
+      setTimeout(() => {
+        success.classList.add("d-none");
+      }, 3000);
+    });
+
+    // Reset password
+    document.getElementById("resetPasswordForm").addEventListener("submit", function (e) {
+      e.preventDefault();
+      document.getElementById("reset-success").classList.remove("d-none");
+      this.reset();
+      setTimeout(() => {
+        document.getElementById("reset-success").classList.add("d-none");
+        const modal = bootstrap.Modal.getInstance(document.getElementById('forgotPasswordModal'));
+        modal.hide();
+      }, 2000);
+    });
+
+    // Contact form: tampilkan pesan berhasil 5 detik
+    document.querySelector('.php-email-form').addEventListener('submit', function (e) {
+      e.preventDefault();
+      const sentMsg = this.querySelector('.sent-message');
+      const errorMsg = this.querySelector('.error-message');
+      const loading = this.querySelector('.loading');
+
+      errorMsg.style.display = 'none';
+      loading.style.display = 'none';
+      sentMsg.style.display = 'block';
+
+      this.reset();
+
+      setTimeout(() => {
+        sentMsg.style.display = 'none';
+      }, 5000);
+    });
+  </script>
+</body>
+
+</html>
